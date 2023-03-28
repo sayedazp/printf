@@ -60,7 +60,7 @@ void p_string(va_list list, int *num)
  * @format: a char pointer
  * @valist: a list
 */
-void handle_print(int *i, int *specify, int *num,
+void handle_print(unsigned int *i, int *specify, int *num,
 char const *format, va_list valist)
 {
 	unsigned int j = 0;
