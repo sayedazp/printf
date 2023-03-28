@@ -97,7 +97,7 @@ int _printf(const char * const format, ...)
 {
 	int num = 0;
 	int specify = 0;
-	unsigned int i = 0, j = 0;
+	unsigned int i = 0;
 	va_list valist;
 
 	if (format == NULL)
