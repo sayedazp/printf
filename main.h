@@ -14,7 +14,8 @@ typedef struct print
 	void (*T_func)(va_list, int *num);
 } t_print;
 
-void handle_print(unsigned int *i, int *specify, int *num, char const *format, va_list valist);
+void handle_print(unsigned int *i, int *specify, int *num,
+char const *format, va_list valist);
 void cprint(char x);
 void p_char(va_list list, int *num);
 void p_string(va_list list, int *num);

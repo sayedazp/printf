@@ -1,7 +1,3 @@
-/**
- * main - entry point func
- * Return - always zero
- */
 #include "main.h"
 /**
  * cprint - a func
@@ -14,6 +10,7 @@ void cprint(char x)
 /**
  * p_char - a func
  * @list: an input
+ * @num: a param
  */
 void p_char(va_list list, int *num)
 {
@@ -25,6 +22,7 @@ void p_char(va_list list, int *num)
 /**
  * p_string - print string
  * @list: arg
+ * @num: a param
  * Return: void
  */
 
@@ -41,17 +39,6 @@ void p_string(va_list list, int *num)
 	}
 	*num += i;
 }
-/**
- * p_integer - print integer
- * @list:arg
- * Return: void
- */
-
-/**
- * _printf - print everything
- * @format:arg
- * Return: void
- */
 /**
  * handle_print - a func to handle print
  * @i: counter
@@ -93,6 +80,12 @@ char const *format, va_list valist)
 		*specify = 0;
 
 }
+/**
+ * _printf - print everything
+ * @format:arg
+ * Return: void
+ */
+
 int _printf(const char * const format, ...)
 {
 	int num = 0;
